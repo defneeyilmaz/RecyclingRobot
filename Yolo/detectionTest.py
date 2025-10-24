@@ -2,9 +2,8 @@ import time
 import cv2
 from ultralytics import YOLO
 
-
 def main(
-        model_name: str = "yolo12n.pt",  # n/s/m/l/x seçebilirsin
+        model_name: str = "best.pt",  # n/s/m/l/x seçebilirsin
         cam_index: int = 0,  # 0: varsayılan kamera, harici kamera için 1 vb.
         imgsz: int = 640,  # giriş boyutu (düşürürsen hızlanır)
         conf: float = 0.25,  # güven eşiği
@@ -65,7 +64,6 @@ def main(
 
 if __name__ == "__main__":
     main(
-        model_name="yolo12n.pt",
         cam_index=0,
         imgsz=640,
         conf=0.25,
