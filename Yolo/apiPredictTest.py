@@ -46,11 +46,11 @@ def predict_image(
 
     # Save output
     if save_output:
-        output_path = "predicted_output.jpg"
+        output_path = "predicted_output_new.jpg"
         cv2.imwrite(output_path, image)
         print(f"✅ Saved prediction to {output_path}")
 
 
 if __name__ == "__main__":
-    test_image = r"E:\PythonProjects\RecyclingRobot\Yolo\datasets\iue_yolo_ready\test\images\capture_20251022_151308_914721_jpg.rf.06111de6059b2d4743c850c43d295970.jpg"
+    test_image = r"E:\PythonProjects\RecyclingRobot\utils\captures\capture_20251024_145710_123671.jpg"
     predict_image(test_image)

@@ -46,7 +46,7 @@ def main(
 if __name__ == "__main__":
     main(
         model_name="best.pt",
-        image_path=r"E:\PythonProjects\RecyclingRobot\Yolo\datasets\iue_yolo_ready\test\images\capture_20251022_151308_914721_jpg.rf.06111de6059b2d4743c850c43d295970.jpg",  # change this to your image
+        image_path=r"E:\PythonProjects\RecyclingRobot\utils\captures\capture_20251024_145710_123671.jpg",  # change this to your image
         imgsz=640,
         conf=0.25,
         iou=0.45,

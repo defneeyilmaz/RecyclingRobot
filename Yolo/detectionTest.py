@@ -3,7 +3,7 @@ import cv2
 from ultralytics import YOLO
 
 def main(
-        model_name: str = "best.pt",  # n/s/m/l/x seçebilirsin
+        model_name: str = "runs/detect/yolo12s-162a/weights/best.pt",  # n/s/m/l/x seçebilirsin
         cam_index: int = 0,  # 0: varsayılan kamera, harici kamera için 1 vb.
         imgsz: int = 640,  # giriş boyutu (düşürürsen hızlanır)
         conf: float = 0.25,  # güven eşiği
