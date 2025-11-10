@@ -16,10 +16,10 @@ import argparse
 # ---------- Config ----------
 DEFAULT_DATA_DIR = "augmented-162-v1-base"  # <-- change if needed
 OUTPUT_DATA_YAML = os.path.join(DEFAULT_DATA_DIR, "data.yaml")
-DEFAULT_MODEL = "yolo12s.pt"   # tiny / fast. other options: yolo11s.pt, yolo11m.pt, ...
-EPOCHS = 100
+DEFAULT_MODEL = r"yolo12n.pt"
+EPOCHS = 200
 IMG_SIZE = 640
-BATCH = 15
+BATCH = 20
 DEVICE = "0"  # GPU device id or "cpu"
 # ----------------------------
 
