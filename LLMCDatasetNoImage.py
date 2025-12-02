@@ -8,8 +8,8 @@ import google.generativeai as genai
 # 1) Paths and config
 # ----------------------------
 
-MODEL_PATH = "/Users/beyzayildirim/Downloads/best.pt"
-DATASET_DIR = "/Users/beyzayildirim/Desktop/preDataset"
+MODEL_PATH = ""
+DATASET_DIR = ""
 OUTPUT_CSV = "yolo_llm_results_last.csv"
 
 
@@ -21,7 +21,7 @@ yolo = YOLO(MODEL_PATH)
 # ----------------------------
 # 3) Configure Google Gemini
 # ----------------------------
-genai.configure(api_key="AIzaSyC4PrlrVPV5X9euK1LKSvep8RdOVXQnKzI")
+genai.configure(api_key="GEMINI_API_KEY")
 model = genai.GenerativeModel("models/gemini-2.5-pro")
 
 # ----------------------------
